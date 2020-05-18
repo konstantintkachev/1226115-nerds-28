@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Студия</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Магазин</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a href="#">Студия</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Магазин готовых шаблонов</h1>
+    </header>
+
+    <main class="page-main">
+      <div class="search-form">
+        <div class="radio">
+          <h3 class="radio__title">Сетка:</h3>
+          <input class="radio__input" type="radio" value="Адаптивная" checked="checked" id="adaptive">
+          <label class="radio__inner" for="adaptive">Адаптивная</label>
+          <input class="radio__input" type="radio" value="Фиксированная" id="fixed">
+          <label class="radio__inner" for="fixed">Фиксированная</label>
+          <input class="radio__input" type="radio" value="Резиновая" id="rubber">
+          <label class="radio__inner" for="rubber">Резиновая</label>
+        </div>
+        <div class="checkbox">
+          <h3 class="checkbox__title">Особенности:</h3>
+          <label class="checkbox__inner">
+            <input class="checkbox__input" type="checkbox" name="features" checked="checked">Слайдер
+          </label>
+          <label class="checkbox__inner">
+            <input class="checkbox__input" type="checkbox" name="features">Блок преимуществ
+          </label><label class="checkbox__inner">
+            <input class="checkbox__input" type="checkbox" name="features" checked="checked">Новости
+          </label><label class="checkbox__inner">
+            <input class="checkbox__input" type="checkbox" name="features">Галерея
+          </label><label class="checkbox__inner">
+            <input class="checkbox__input" type="checkbox" name="features">Корзина
+          </label>
+        </div>
+        <button class="search-form__btn" name="button" type="submit">Показать</button>
+      </div>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <div class="gallery__sedona">
+          <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+          <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Сайт Седона">
+          <div class="popup-wrapper">
+            <h3 class="popup-wrapper__title">Sedona</h3>
+            <p class="popup-wrapper__text">
+              Информационный сайт для туристов
+            </p>
+            <button class="popup-wrapper__btn" type="button">9 900руб.</button>
+          </div>
+        </div>
+        <div class="gallery__pink">
+          <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+          <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Сайт Пинк">
+        </div>
+        <div class="gallery__pinbarbershop">
+          <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+          <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Сайт Барбершоп">
+        </div>
+        <div class="gallery__mishka">
+          <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+          <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Сайт Мишка">
+        </div>
+        <div class="gallery__aplus">
+          <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+          <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Сайт Аплус">
+        </div>
+        <div class="gallery__kvast">
+          <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+          <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Сайт Квас">
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="https://vk.com/">
+            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://ru-ru.facebook.com/">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://www.instagram.com/">
+            <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм
+          </a>
+        </li>
+      </ul>
+      <div class="footer__article">
+        <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
+        <p class="footer__text">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
