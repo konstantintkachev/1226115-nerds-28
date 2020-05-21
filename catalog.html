@@ -36,6 +36,39 @@
 
     <main class="page-main">
       <div class="search-form">
+        <div class="filter-search">
+          <span class="filter-search__title">Стоимость:</span>
+          <span class="filter-search__title">Сортировать:</span>
+          <ul class="filter-search__list">
+            <li class="filter-search__item">
+              <button class="filter-search__btn" type="submit">по цене</button>
+            </li>
+            <li class="filter-search__item">
+              <button class="filter-search__btn" type="submit">по типу</button>
+            </li>
+            <li class="filter-search__item">
+              <button class="filter-search__btn" type="submit">по названию</button>
+            </li>
+            <li class="filter-search__item">
+              <button class="filter-search__btn" type="submit">
+                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
+              </button>
+              <button class="filter-search__btn" type="submit">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
+              </button>
+            </li>
+          </ul>
+          <div class="filter__value">
+            <input class="filter__number" type="text" id="renta" name="minCost" value="от 0">
+            <input class="filter__number number" type="text" name="maxCost" value="до 15 000">
+          </div>
+          <img class="filter__img-button-left" src="img/filter-button.svg" width="20" height="22"
+            alt="Фильтрующая кнопка">
+          <span class="filter__range"></span>
+          <img class="filter__img-button-right" src="img/filter-button.svg" width="20" height="22"
+            alt="Фильтрующая кнопка">
+          <button class="filter__btn" type="submit">Показать</button>
+        </div>
         <div class="radio">
           <h3 class="radio__title">Сетка:</h3>
           <input class="radio__input" type="radio" value="Адаптивная" checked="checked" id="adaptive">
@@ -91,6 +124,15 @@
           <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Сайт Квас">
         </div>
       </section>
+      <div class="map">
+        <div class="popup">
+          <h3 class="popup__title">NЁRDS DESIGN STUDIO</h3>
+          <p class="popup__text">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>тел. +7 (812) 275-75-75
+          </p>
+          <button class="popup__btn" type="button">Напишите нам</button>
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer">
