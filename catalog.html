@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
+
   <body>
 
     <header class="page-header">
@@ -35,66 +36,76 @@
     </header>
 
     <main class="page-main">
-      <div class="search-form">
-        <div class="filter-search">
-          <span class="filter-search__title">Стоимость:</span>
-          <span class="filter-search__title">Сортировать:</span>
-          <ul class="filter-search__list">
-            <li class="filter-search__item">
-              <button class="filter-search__btn" type="submit">по цене</button>
-            </li>
-            <li class="filter-search__item">
-              <button class="filter-search__btn" type="submit">по типу</button>
-            </li>
-            <li class="filter-search__item">
-              <button class="filter-search__btn" type="submit">по названию</button>
-            </li>
-            <li class="filter-search__item">
-              <button class="filter-search__btn" type="submit">
-                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
-              </button>
-              <button class="filter-search__btn" type="submit">
-                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
-              </button>
-            </li>
-          </ul>
-          <div class="filter__value">
-            <input class="filter__number" type="text" id="renta" name="minCost" value="от 0">
-            <input class="filter__number number" type="text" name="maxCost" value="до 15 000">
-          </div>
-          <img class="filter__img-button-left" src="img/filter-button.svg" width="20" height="22"
-            alt="Фильтрующая кнопка">
-          <span class="filter__range"></span>
-          <img class="filter__img-button-right" src="img/filter-button.svg" width="20" height="22"
-            alt="Фильтрующая кнопка">
-          <button class="filter__btn" type="submit">Показать</button>
-        </div>
-        <div class="radio">
-          <h3 class="radio__title">Сетка:</h3>
-          <input class="radio__input" type="radio" value="Адаптивная" checked="checked" id="adaptive">
-          <label class="radio__inner" for="adaptive">Адаптивная</label>
-          <input class="radio__input" type="radio" value="Фиксированная" id="fixed">
-          <label class="radio__inner" for="fixed">Фиксированная</label>
-          <input class="radio__input" type="radio" value="Резиновая" id="rubber">
-          <label class="radio__inner" for="rubber">Резиновая</label>
-        </div>
-        <div class="checkbox">
-          <h3 class="checkbox__title">Особенности:</h3>
-          <label class="checkbox__inner">
-            <input class="checkbox__input" type="checkbox" name="features" checked="checked">Слайдер
-          </label>
-          <label class="checkbox__inner">
-            <input class="checkbox__input" type="checkbox" name="features">Блок преимуществ
-          </label><label class="checkbox__inner">
-            <input class="checkbox__input" type="checkbox" name="features" checked="checked">Новости
-          </label><label class="checkbox__inner">
-            <input class="checkbox__input" type="checkbox" name="features">Галерея
-          </label><label class="checkbox__inner">
-            <input class="checkbox__input" type="checkbox" name="features">Корзина
-          </label>
-        </div>
-        <button class="search-form__btn" name="button" type="submit">Показать</button>
+      <div class="sorting">
+        <h3 class="sorting__title">Сортировать:</h3>
+        <ul class="sorting__list">
+          <li class="sorting__item">
+            <button class="sorting__btn" type="button">по цене</button>
+          </li>
+          <li class="sorting__item">
+            <button class="sorting__btn" type="button">по типу</button>
+          </li>
+          <li class="sorting__item">
+            <button class="sorting__btn" type="button">по названию</button>
+          </li>
+          <li class="sorting__item">
+            <button class="sorting__btn" type="button">
+            <img src="#" width="11" height="10" alt="Стрелка вниз">
+            </button>
+            <button class="sorting__btn" type="button">
+            <img src="#" width="11" height="10" alt="Стрелка вверх">
+            </button>
+          </li>
+        </ul>
       </div>
+      <aside class="search-form__aside">
+        <form class="search-form" action="https://echo.htmlacademy.ru/">
+          <div class="filter__wrapper">
+            <div class="filter__value">
+              <h3 class="filter__title">Стоимость:</h3>
+              <input class="filter__number" type="text" id="renta" name="minCost" value="от 0">
+              <input class="filter__number number" type="text" name="maxCost" value="до 15 000">
+            </div>
+
+            <img class="filter__img-button-left" src="img/filter-button.svg" width="20" height="22"
+            alt="Фильтрующая кнопка">
+            <span class="filter__range"></span>
+            <img class="filter__img-button-right" src="img/filter-button.svg" width="20" height="22"
+            alt="Фильтрующая кнопка">
+          </div>
+
+          <div class="radio">
+            <h3 class="radio__title">Сетка:</h3>
+            <input class="radio__input" type="radio" value="Адаптивная" checked="checked" id="adaptive">
+            <label class="radio__inner" for="adaptive">Адаптивная</label>
+            <input class="radio__input" type="radio" value="Фиксированная" id="fixed">
+            <label class="radio__inner" for="fixed">Фиксированная</label>
+            <input class="radio__input" type="radio" value="Резиновая" id="rubber">
+            <label class="radio__inner" for="rubber">Резиновая</label>
+          </div>
+
+          <div class="checkbox">
+            <h3 class="checkbox__title">Особенности:</h3>
+            <label class="checkbox__inner">
+              <input class="checkbox__input" type="checkbox" name="features" checked="checked">Слайдер
+            </label>
+            <label class="checkbox__inner">
+              <input class="checkbox__input" type="checkbox" name="features">Блок преимуществ
+            </label>
+            <label class="checkbox__inner">
+              <input class="checkbox__input" type="checkbox" name="features" checked="checked">Новости
+            </label>
+            <label class="checkbox__inner">
+              <input class="checkbox__input" type="checkbox" name="features">Галерея
+            </label>
+            <label class="checkbox__inner">
+              <input class="checkbox__input" type="checkbox" name="features">Корзина
+            </label>
+          </div>
+
+          <button class="search-form__btn" name="button" type="submit">Показать</button>
+        </form>
+      </aside>
 
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
@@ -124,14 +135,38 @@
           <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Сайт Квас">
         </div>
       </section>
+
+      <div class="page-btn">
+        <ul class="page-btn__list">
+          <li class="page-btn__item page-btn__item--active">1</li>
+          <li class="page-btn__item">2</li>
+          <li class="page-btn__item">Следующая</li>
+        </ul>
+      </div>
+
       <div class="map">
         <div class="popup">
           <h3 class="popup__title">NЁRDS DESIGN STUDIO</h3>
-          <p class="popup__text">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>тел. +7 (812) 275-75-75
-          </p>
+          <address class="popup__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </address>
           <button class="popup__btn" type="button">Напишите нам</button>
         </div>
+      </div>
+
+      <div class="a-popup">
+        <form class="a-popup__form" action="https://echo.htmlacademy.ru/">
+          <h2 class="a-popup__title">Напишите нам</h2>
+          <label class="a-popup__label">Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия" required="required">
+          </label>
+          <label class="a-popup__label">Ваш e-mail:
+            <input type="email" name="email" placeholder="email@example.com" id="email" required="required">
+          </label>
+          <textarea class="a-popup__comment" name="comment" cols="25" rows="5" placeholder="В свободной форме"></textarea>
+          <button class="a-popup__btn" type="submit">Отправить</button>
+        </form>
       </div>
     </main>
 
