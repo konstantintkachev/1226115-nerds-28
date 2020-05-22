@@ -44,6 +44,20 @@
           <img src="img/slide-picture.jpg" width="698" height="413" alt="Телефоны">
         </div>
       </div>
+      <ul class="slides__lit">
+        <li class="slides__item">
+          <h2 class="slides__title">Долго, дорого, скрупулезно.</h2>
+          <p class="slides__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        </li>
+        <li class="slides__item">
+          <h2 class="slides__title">Любим математику как никто другой</h2>
+          <p class="slides__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        </li>
+        <li class="slides__item">
+          <h2 class="slides__title">Только ночь, только хардкор</h2>
+          <p class="slides__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+        </li>
+      </ul>
       <div class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__list">
@@ -73,7 +87,7 @@
           </li>
         </ul>
       </div>
-      <div class="description">
+      <section class="description">
         <div class="description__wrapper">
             <h2 class="description__title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
             <ul class="description__list">
@@ -88,47 +102,59 @@
               </li>
             </ul>
         </div>
-          <div class="showing">
+          <dl class="showing">
             <div class="showing__wrapper">
               <img src="img/nerds-picture.jpg" width="360" height="208" alt="Нёрдс картинка">
               <p class="showing__text"> c 2004 года любим точность во всем:</p>
             </div>
-              <div class="showing__statistics">
-                <span class="showing__number">146%</span>
-                <p class="showing__lead">Уровень самоотдачи</p>
-              </div>
-              <div class="showing__statistics">
-                <span class="showing__number">100%</span>
-                <p class="showing__lead">Соблюдение сроков</p>
-              </div>
-              <div class="showing__statistics">
-                <span class="showing__number">50%</span>
-                <p class="showing__lead">Минимальная предоплата</p>
-              </div>
-          </div>
-      </div>
-      <div class="logos">
-        <div class="logos__htmlacademy">
-          <img src="img/htmlacademy-logo.jpg" width="199" height="68" alt="Логотип html">
-        </div>
-        <div class="logos__borodinski">
-          <img src="img/borodinski-logo.jpg" width="209" height="90" alt="Логотип Бородинский">
-        </div>
-        <div class="logos__pink">
-          <img src="img/pink-logo.jpg" width="185" height="52" alt="Логотип Pink">
-        </div>
-        <div class="logos__mishka">
-          <img src="img/mishka-logo.jpg" width="173" height="84" alt="Логотип Мишка">
-        </div>
-      </div>
+              <dt class="showing__title">146%</dt>
+              <dd class="showing__lead">Уровень самоотдачи</dd>
+
+              <dt class="showing__title">100%</dt>
+              <dd class="showing__lead">Соблюдение сроков</dd>
+
+              <dt class="showing__title">50%</dt>
+              <dd class="showing__lead">Минимальная предоплата</dd>
+          </dl>
+        </section>
+      <section class="logos">
+        <ul class="logos__list">
+          <li class="logos__item-htmlacademy">
+            <img src="img/htmlacademy-logo.jpg" width="199" height="68" alt="Логотип html">
+          </li>
+          <li class="logos__item-borodinski">
+            <img src="img/borodinski-logo.jpg" width="209" height="90" alt="Логотип Бородинский">
+          </li>
+          <li class="logos__item-pink">
+            <img src="img/pink-logo.jpg" width="185" height="52" alt="Логотип Pink">
+          </li>
+          <li class="logos__item-mishka">
+            <img src="img/mishka-logo.jpg" width="173" height="84" alt="Логотип Мишка">
+          </li>
+        </ul>
+      </section>
       <div class="map">
         <div class="popup">
           <h3 class="popup__title">NЁRDS DESIGN STUDIO</h3>
-          <p class="popup__text">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>тел. +7 (812) 275-75-75
-          </p>
+          <address class="popup__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </address>
           <button class="popup__btn" type="button">Напишите нам</button>
         </div>
+      </div>
+      <div class="a-popup">
+        <form class="a-popup__form" action="https://echo.htmlacademy.ru/">
+          <h2 class="a-popup__title">Напишите нам</h2>
+          <label class="a-popup__label">Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия" required="required">
+          </label>
+          <label class="a-popup__label">Ваш e-mail:
+            <input type="email" name="email" placeholder="email@example.com" id="email" required="required">
+          </label>
+          <textarea class="a-popup__comment" name="comment" cols="25" rows="5" placeholder="В свободной форме"></textarea>
+          <button class="a-popup__btn" type="submit">Отправить</button>
+        </form>
       </div>
     </main>
 
