@@ -34,20 +34,12 @@
     </header>
 
     <main class="page-main">
-      <div class="article__wrapper">
-        <div class="article">
-          <h2 class="article__title">Долго, дорого, скрупулезно.</h2>
-          <p class="article__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <button class="article__btn" type="button">Узнать больше</button>
-        </div>
-        <div class="banner">
-          <img src="img/slide-picture.jpg" width="698" height="413" alt="Телефоны">
-        </div>
-      </div>
+    <section class="slides">
       <ul class="slides__lit">
         <li class="slides__item">
           <h2 class="slides__title">Долго, дорого, скрупулезно.</h2>
           <p class="slides__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <button class="slides__btn" type="button">Узнать больше</button>
         </li>
         <li class="slides__item">
           <h2 class="slides__title">Любим математику как никто другой</h2>
@@ -58,6 +50,12 @@
           <p class="slides__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
         </li>
       </ul>
+      <div class="slides__controls">
+        <button class="slides__control-btn" type="button">Узнать больше</button>
+        <button class="slides__control-btn" type="button">Узнать больше</button>
+        <button class="slides__control-btn" type="button">Узнать больше</button>
+    </div>
+    </section>
       <div class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__list">
@@ -107,14 +105,20 @@
               <img src="img/nerds-picture.jpg" width="360" height="208" alt="Нёрдс картинка">
               <p class="showing__text"> c 2004 года любим точность во всем:</p>
             </div>
-              <dt class="showing__title">146%</dt>
-              <dd class="showing__lead">Уровень самоотдачи</dd>
+            <div class="showing__statistics">
+              <dt class="showing__lead">Уровень самоотдачи</dt>
+              <dd class="showing__title">146%</dd>
+            </div>
 
-              <dt class="showing__title">100%</dt>
-              <dd class="showing__lead">Соблюдение сроков</dd>
+            <div class="showing__statistics">
+              <dt class="showing__lead">Соблюдение сроков</dt>
+              <dd class="showing__title">100%</dd>
+            </div>
 
-              <dt class="showing__title">50%</dt>
-              <dd class="showing__lead">Минимальная предоплата</dd>
+            <div class="showing__statistics">
+              <dt class="showing__lead">Минимальная предоплата</dt>
+              <dd class="showing__title">50%</dd>
+            </div>
           </dl>
         </section>
       <section class="logos">
