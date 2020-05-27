@@ -41,8 +41,8 @@
           <div class="filter__wrapper">
             <div class="filter__value">
               <h3 class="filter__title">Стоимость:</h3>
-              <input class="filter__number" type="text" id="renta" name="minCost" value="от 0">
-              <input class="filter__number number" type="text" name="maxCost" value="до 15 000">
+              <input class="filter__number" type="text" id="renta" name="minCost" placeholder="от 0">
+              <input class="filter__number number" type="text" name="maxCost" placeholder="до 15 000">
             </div>
 
             <img class="filter__img-button-left" src="img/filter-button.svg" width="20" height="22"
@@ -54,11 +54,11 @@
 
           <div class="radio">
             <h3 class="radio__title">Сетка:</h3>
-            <input class="radio__input" type="radio" value="Адаптивная" checked="checked" id="adaptive">
+            <input class="radio__input" name="grid" type="radio" value="Адаптивная" checked="checked" id="adaptive">
             <label class="radio__inner" for="adaptive">Адаптивная</label>
-            <input class="radio__input" type="radio" value="Фиксированная" id="fixed">
+            <input class="radio__input" name="grid" type="radio" value="Фиксированная" id="fixed">
             <label class="radio__inner" for="fixed">Фиксированная</label>
-            <input class="radio__input" type="radio" value="Резиновая" id="rubber">
+            <input class="radio__input" name="grid" type="radio" value="Резиновая" id="rubber">
             <label class="radio__inner" for="rubber">Резиновая</label>
           </div>
 
