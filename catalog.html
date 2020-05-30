@@ -8,27 +8,27 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html" aria-label="Переход на главную">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Студия</a>
+            <a href="index.html" aria-label="Переход на главную">Студия</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Клиенты</a>
+            <a href="#" aria-label="Переход на страницу клиенты">Клиенты</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Магазин</a>
+            <a href="catalog.html"aria-label="Переход на страницу магазин">Магазин</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Контакты</a>
+            <a href="#" aria-label="Переход на страницу контакты">Контакты</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a href="#">Студия</a>
+            <a href="#" aria-label="Моя корзина">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -44,12 +44,17 @@
               <input class="filter__number" type="text" id="renta" name="minCost" placeholder="от 0">
               <input class="filter__number number" type="text" name="maxCost" placeholder="до 15 000">
             </div>
-
-            <img class="filter__img-button-left" src="img/filter-button.svg" width="20" height="22"
-            alt="Фильтрующая кнопка">
+            <button class="filter__img-button-left" type="button" aria-label="Фильтрующая кнопка">
+              <!-- Подключение кнопок в стилях
+              <img src="img/filter-button.svg" width="20" height="22"
+              alt="Фильтрующая кнопка"> -->
+            </button>
             <span class="filter__range"></span>
-            <img class="filter__img-button-right" src="img/filter-button.svg" width="20" height="22"
-            alt="Фильтрующая кнопка">
+            <button class="filter__img-button-right" type="button" aria-label="Фильтрующая кнопка">
+              <!-- Подключение кнопок в стилях
+              <img src="img/filter-button.svg" width="20" height="22"
+              alt="Фильтрующая кнопка"> -->
+            </button>
           </div>
 
           <div class="radio">
@@ -81,7 +86,7 @@
             </label>
           </div>
 
-          <button class="search-form__btn" name="button" type="submit">Показать</button>
+          <button class="search-form__btn" type="submit" aria-label="Кнопка показать">Показать</button>
         </form>
       </aside>
 
@@ -91,17 +96,25 @@
           <h3 class="sorting__title">Сортировать:</h3>
           <ul class="sorting__list">
             <li class="sorting__item">
-              <button class="sorting__btn" type="button">по цене</button>
+              <button class="sorting__btn" type="button" aria-label="Кнопка по цене">по цене</button>
             </li>
             <li class="sorting__item">
-              <button class="sorting__btn" type="button">по типу</button>
+              <button class="sorting__btn" type="button" aria-label="Кнопка по типу">по типу</button>
             </li>
             <li class="sorting__item">
-              <button class="sorting__btn" type="button">по названию</button>
+              <button class="sorting__btn" type="button" aria-label="Кнопка по названию">по названию</button>
             </li>
             <li class="sorting__item">
-              <button class="sorting__btn" type="button">Стрелка вниз</button>
-              <button class="sorting__btn" type="button">Стрелка вверх</button>
+              <button class="sorting__btn" type="button" aria-label="Кнопка стрелка вниз">
+                <!-- Подключение кнопок в стилях
+                <img src="img/icon-down-dir.svg" width="11" height="10"
+                alt="Кнопка вниз"> -->
+              </button>
+              <button class="sorting__btn" type="button" aria-label="Кнопка стрелка вверх">
+                <!-- Подключение кнопок в стилях
+                <img src="img/icon-up-dir.svg" width="11" height="10"
+                alt="Кнопка вверх"> -->
+              </button>
             </li>
           </ul>
         </div>
@@ -134,9 +147,18 @@
 
       <div class="page-btn">
         <ul class="page-btn__list">
-          <li class="page-btn__item page-btn__item--active">1</li>
-          <li class="page-btn__item">2</li>
-          <li class="page-btn__item">Следующая</li>
+          <li class="page-btn__item page-btn__item--active">
+            <a href="#" aria-label="Первая страница каталога">1</a>
+          </li>
+          <li class="page-btn__item">
+            <a href="#" aria-label="Вторая страница каталога">2</a>
+          </li>
+          <li class="page-btn__item">
+            <a href="#" aria-label="Третья страница каталога">3</a>
+          </li>
+          <li class="page-btn__item">
+            <a href="#" aria-label="Следующая страница каталога">Следующая</a>
+          </li>
         </ul>
       </div>
 
@@ -149,9 +171,9 @@
         <h3 class="popup__title">NЁRDS DESIGN STUDIO</h3>
         <address class="popup__address">
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a href="tel:+78122757575" aria-label="Позвонить по этому номеру">тел. +7 (812) 275-75-75</a>
         </address>
-        <button class="popup__btn" type="button">Напишите нам</button>
+        <button class="popup__btn" type="button" aria-label="Нажать на кнопку напишите нам">Напишите нам</button>
       </div>
       <div class="a-popup">
         <form class="a-popup__form" action="https://echo.htmlacademy.ru/">
@@ -163,7 +185,7 @@
             <input type="email" name="email" placeholder="email@example.com" id="email" required="required">
           </label>
           <textarea class="a-popup__comment" name="comment" cols="25" rows="5" placeholder="В свободной форме"></textarea>
-          <button class="a-popup__btn" type="submit">Отправить</button>
+          <button class="a-popup__btn" type="submit" aria-label="Нажать на кнопку отправить">Отправить</button>
         </form>
       </div>
     </main>
@@ -171,18 +193,24 @@
     <footer class="page-footer">
       <ul class="socials__list">
         <li class="socials__item">
-          <a href="https://vk.com/">
-            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте
+          <a href="https://vk.com/" aria-label="Перейти на сайт Вконтакте">
+            <!-- Подключение иконок социальных сетей в стилях
+            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"> -->
+            Вконтакте
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://ru-ru.facebook.com/">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук
+          <a href="https://ru-ru.facebook.com/" aria-label="Перейти на сайт Фейсбук">
+            <!-- Подключение иконок социальных сетей в стилях
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"> -->
+            Фейсбук
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://www.instagram.com/">
-            <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм
+          <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм">
+            <!-- Подключение иконок социальных сетей в стилях
+            <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"> -->
+            Инстаграм
           </a>
         </li>
       </ul>
