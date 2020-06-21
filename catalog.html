@@ -50,11 +50,11 @@
                 <input class="filter__number number" type="text" name="maxCost" placeholder="до 15 000">
               </div>
               <button class="filter__img-button-left" type="button" aria-label="Фильтрующая кнопка">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+                <img src="img/filter-button.svg" width="20" height="23" alt="Кнопка фильтр">
               </button>
               <span class="filter__range"></span>
               <button class="filter__img-button-right" type="button" aria-label="Фильтрующая кнопка">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+                <img src="img/filter-button.svg" width="20" height="23" alt="Кнопка фильтр">
               </button>
             </div>
 
@@ -97,7 +97,7 @@
             <h3 class="sorting__title">Сортировать:</h3>
             <ul class="sorting__list">
               <li class="sorting__item">
-                <button class="sorting__btn" type="button" aria-label="Кнопка по цене">по цене</button>
+                <button class="sorting__btn--active" type="button" aria-label="Кнопка по цене">по цене</button>
               </li>
               <li class="sorting__item">
                 <button class="sorting__btn" type="button" aria-label="Кнопка по типу">по типу</button>
@@ -106,21 +106,18 @@
                 <button class="sorting__btn" type="button" aria-label="Кнопка по названию">по названию</button>
               </li>
               <li class="sorting__item">
-                <button class="sorting__btn" type="button" aria-label="Кнопка стрелка вниз">
-                  <!-- Подключение кнопок в стилях
-                  <img src="img/icon-down-dir.svg" width="11" height="10"
-                  alt="Кнопка вниз"> -->
+                <button class="sorting__btn--down" type="button" aria-label="Кнопка стрелка вниз">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
                 </button>
                 <button class="sorting__btn" type="button" aria-label="Кнопка стрелка вверх">
-                  <!-- Подключение кнопок в стилях
-                  <img src="img/icon-up-dir.svg" width="11" height="10"
-                  alt="Кнопка вверх"> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
                 </button>
               </li>
             </ul>
           </div>
           <div class="gallery__catalog">
             <div class="gallery__sedona">
+              <div class="gallery__sedona--browser"></div>
               <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Сайт Седона">
               <div class="popup-wrapper">
                 <h3 class="popup-wrapper__title">Sedona</h3>
@@ -131,40 +128,43 @@
               </div>
             </div>
             <div class="gallery__pink">
-              <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Сайт Пинк">
+              <div class="gallery__pink--browser"></div>
+              <img src="img/img-pink-jpg.jpg" width="358" height="576" alt="Сайт Пинк">
             </div>
-            <div class="gallery__pinbarbershop">
-              <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Сайт Барбершоп">
+            <div class="gallery__barbershop">
+              <div class="gallery__barbershop--browser"></div>
+              <img src="img/img-barbershop-jpg.jpg" width="358" height="576" alt="Сайт Барбершоп">
             </div>
             <div class="gallery__mishka">
-              <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Сайт Мишка">
+              <div class="gallery__mishka--browser"></div>
+              <img src="img/img-mishka-jpg.jpg" width="358" height="576" alt="Сайт Мишка">
             </div>
             <div class="gallery__aplus">
-              <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Сайт Аплус">
+              <div class="gallery__aplus--browser"></div>
+              <img src="img/img-aplus-jpg.jpg" width="358" height="576" alt="Сайт Аплус">
             </div>
             <div class="gallery__kvast">
-              <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Сайт Квас">
+              <div class="gallery__kvast--browser"></div>
+              <img src="img/img-kvast-jpg.jpg" width="358" height="576" alt="Сайт Квас">
             </div>
           </div>
+          <div class="page-btn">
+            <ul class="page-btn__list">
+              <li class="page-btn__item page-btn__item--active">
+                <a href="#" aria-label="Первая страница каталога">1</a>
+              </li>
+              <li class="page-btn__item">
+                <a href="#" aria-label="Вторая страница каталога">2</a>
+              </li>
+              <li class="page-btn__item">
+                <a href="#" aria-label="Третья страница каталога">3</a>
+              </li>
+              <li class="page-btn__item page-btn__item--next">
+                <a href="#" aria-label="Следующая страница каталога">Следующая</a>
+              </li>
+            </ul>
+          </div>
         </section>
-
-        <div class="page-btn">
-          <ul class="page-btn__list">
-            <li class="page-btn__item page-btn__item--active">
-              <a href="#" aria-label="Первая страница каталога">1</a>
-            </li>
-            <li class="page-btn__item">
-              <a href="#" aria-label="Вторая страница каталога">2</a>
-            </li>
-            <li class="page-btn__item">
-              <a href="#" aria-label="Третья страница каталога">3</a>
-            </li>
-            <li class="page-btn__item page-btn__item--next">
-              <a href="#" aria-label="Следующая страница каталога">Следующая</a>
-            </li>
-          </ul>
-        </div>
-
       </div>
 
       <div class="map">
