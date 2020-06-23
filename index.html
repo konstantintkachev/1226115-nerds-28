@@ -151,8 +151,7 @@
       <div class="map">
         <img src="img/2.jpg" width="1440" height="416">
         <div class="map__marker">
-          <!-- Подключение маркера карты в стилях
-          <img src="img/map-marker.png" width="231" height="190" alt="Маркер на карте"> -->
+          <!-- Подключение маркера карты в стилях -->
         </div>
           <div class="popup">
             <h3 class="popup__title">NЁRDS DESIGN STUDIO</h3>
@@ -162,20 +161,27 @@
             </address>
             <button class="popup__btn" type="button" aria-label="Нажать на кнопку напишите нам">Напишите нам</button>
           </div>
+          <div class="a-popup">
+              <form class="a-popup__form" action="https://echo.htmlacademy.ru/">
+                <h2 class="a-popup__title">Напишите нам</h2>
+                <a href="#" class="a-popup__close-cross" aria-label="Нажать на кнопку закрыть"></a>
+                <span class="a-popup__close-cross"></span>
+                <div class="a-popup__wrapper">
+                  <label class="a-popup__label">Ваше имя:
+                    <input type="text" name="name" placeholder="Имя Фамилия" required="required">
+                  </label>
+                  <label class="a-popup__label">Ваш e-mail:
+                    <input type="email" name="email" placeholder="email@example.com" id="email" required="required">
+                  </label>
+                </div>
+                <label class="a-popup__comment">Текст письма:
+                  <textarea name="comment" placeholder="В свободной форме"></textarea>
+                </label>
+                <button class="a-popup__btn" type="submit" aria-label="Нажать на кнопку отправить">Отправить</button>
+              </form>
+          </div>
       </div>
-      <div class="a-popup">
-        <form class="a-popup__form" action="https://echo.htmlacademy.ru/">
-          <h2 class="a-popup__title">Напишите нам</h2>
-          <label class="a-popup__label">Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия" required="required">
-          </label>
-          <label class="a-popup__label">Ваш e-mail:
-            <input type="email" name="email" placeholder="email@example.com" id="email" required="required">
-          </label>
-          <textarea class="a-popup__comment" name="comment" cols="25" rows="5" placeholder="В свободной форме"></textarea>
-          <button class="a-popup__btn" type="submit" aria-label="Нажать на кнопку отправить">Отправить</button>
-        </form>
-      </div>
+
     </main>
 
     <footer class="page-footer">
