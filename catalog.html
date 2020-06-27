@@ -44,47 +44,49 @@
         <aside class="search-form__aside">
           <form class="search-form" action="https://echo.htmlacademy.ru/">
             <div class="filter__wrapper">
-              <div class="filter__value">
-                <h3 class="filter__title">Стоимость:</h3>
-                <input class="filter__number" type="text" id="renta" name="minCost" placeholder="от 0">
-                <input class="filter__number number" type="text" name="maxCost" placeholder="до 15 000">
+              <h3 class="filter__title">Стоимость:</h3>
+              <div class="filter__range">
+                <div class="filter__range-controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                  </div>
+                  <div class="filter__toggle toggle-min"></div>
+                  <div class="filter__toggle toggle-max"></div>
+                </div>
+
+              <div class="filter__price-controls">
+                <label class="filter__min-price"> от
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="filter__max-price"> до
+                  <input type="number" name="max-price" value="15000">
+                </label>
               </div>
-              <button class="filter__img-button-left" type="button" aria-label="Фильтрующая кнопка">
-                <img src="img/filter-button.svg" width="20" height="23" alt="Кнопка фильтр">
-              </button>
-              <span class="filter__range"></span>
-              <button class="filter__img-button-right" type="button" aria-label="Фильтрующая кнопка">
-                <img src="img/filter-button.svg" width="20" height="23" alt="Кнопка фильтр">
-              </button>
+              </div>
             </div>
 
             <div class="radio">
               <h3 class="radio__title">Сетка:</h3>
-              <input class="radio__input" name="grid" type="radio" value="adaptive" checked="checked" id="adaptive">
-              <label class="radio__inner" for="adaptive">Адаптивная</label>
-              <input class="radio__input" name="grid" type="radio" value="fixed" id="fixed">
-              <label class="radio__inner" for="fixed">Фиксированная</label>
-              <input class="radio__input" name="grid" type="radio" value="rubber" id="rubber">
-              <label class="radio__inner" for="rubber">Резиновая</label>
+                <input class="radio__input" name="grid" type="radio" value="adaptive" checked="checked" id="adaptive">
+                <label class="radio__inner" for="adaptive">Адаптивная</label>
+                <input class="radio__input" name="grid" type="radio" value="fixed" id="fixed">
+                <label class="radio__inner" for="fixed">Фиксированная</label>
+                <input class="radio__input" name="grid" type="radio" value="rubber" id="rubber">
+                <label class="radio__inner" for="rubber">Резиновая</label>
             </div>
 
             <div class="checkbox">
               <h3 class="checkbox__title">Особенности:</h3>
-              <label class="checkbox__inner">
-                <input class="checkbox__input" type="checkbox" name="Slider" checked="checked">Слайдер
-              </label>
-              <label class="checkbox__inner">
-                <input class="checkbox__input" type="checkbox" name="Advantages">Блок преимуществ
-              </label>
-              <label class="checkbox__inner">
-                <input class="checkbox__input" type="checkbox" name="News" checked="checked">Новости
-              </label>
-              <label class="checkbox__inner">
-                <input class="checkbox__input" type="checkbox" name="Gallery">Галерея
-              </label>
-              <label class="checkbox__inner">
-                <input class="checkbox__input" type="checkbox" name="Basket">Корзина
-              </label>
+              <input class="checkbox__input" type="checkbox" name="slider" checked="checked" id="slider">
+              <label class="checkbox__inner" for="slider">Слайдер</label>
+              <input class="checkbox__input" type="checkbox" name="advantages" id="advantages">
+              <label class="checkbox__inner" for="advantages">Блок преимуществ</label>
+              <input class="checkbox__input" type="checkbox" name="news" checked="checked" id="news">
+              <label class="checkbox__inner" for="news">Новости</label>
+              <input class="checkbox__input" type="checkbox" name="gallery" id="gallery">
+              <label class="checkbox__inner" for="gallery">Галерея</label>
+              <input class="checkbox__input" type="checkbox" name="basket" id="basket">
+              <label class="checkbox__inner" for="basket">Корзина</label>
             </div>
 
             <button class="search-form__btn" type="submit" aria-label="Кнопка показать">Показать</button>
@@ -184,8 +186,7 @@
           <div class="a-popup">
             <form class="a-popup__form" action="https://echo.htmlacademy.ru/">
               <h2 class="a-popup__title">Напишите нам</h2>
-              <a href="#" class="a-popup__close-cross" aria-label="Нажать на кнопку закрыть"></a>
-              <span class="a-popup__close-cross"></span>
+              <button href="#" class="a-popup__close-cross" aria-label="Нажать на кнопку закрыть"></button>
               <div class="a-popup__wrapper">
                 <label class="a-popup__label">Ваше имя:
                   <input type="text" name="name" placeholder="Имя Фамилия" required="required">
