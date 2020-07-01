@@ -120,7 +120,7 @@ a {
   position: absolute;
   width: 698px;
   height: 413px;
-  left: 405px;
+  left: 431px;
   top: -60px;
 }
 
@@ -140,6 +140,7 @@ a {
   text-transform: none;
   width: 379px;
   margin-top: 70px;
+  margin-bottom: 0;
 }
 
 .slides__text {
@@ -147,8 +148,9 @@ a {
   font: 16px;
   line-height: 24px;
   color: var(--basic-dark);
-  width: 361px;
-  padding-bottom: 42px;
+  width: 362px;
+  margin-bottom: 40px;
+  margin-top: 27px;
 }
 
 .slides__btn {
@@ -189,6 +191,7 @@ a {
   justify-content: space-around;
   width: 100%;
   padding-left: 202px;
+  margin-top: 26px;
 }
 
 .main-nav__item a {
@@ -255,7 +258,7 @@ a {
   padding: 0;
   margin: 80px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0fr 0fr 0fr;
   column-gap: 100px;
 }
 
@@ -268,6 +271,8 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
 
 .services__text {
@@ -276,6 +281,7 @@ a {
   text-transform: none;
   color: var(--basic-dark);
   padding-right: 20px;
+  margin-bottom: 33px;
 }
 
 .services__btn {
@@ -344,7 +350,16 @@ a {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 149px;
+  column-gap: 145px;
+  position: relative;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  width: 1158px;
+  height: 2px;
+  background-color: var(--basic-page-btn);
 }
 
 .description__wrapper {
@@ -356,11 +371,14 @@ a {
   font-size: 45px;
   line-height: 45px;
   text-transform: none;
+  margin-top: 74px;
+  margin-bottom: 34px;
 }
 
 .description__text {
   text-transform: none;
   color: var(--basic-dark);
+  margin-bottom: 40px;
 }
 
 .description__list {
@@ -371,13 +389,18 @@ a {
 
 .description__list h3 {
   font-size: 16px;
+  margin-bottom: 7px;
 }
 
 .description__item {
   text-transform: none;
   display: flex;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 36px;
+}
+
+.description__item p {
+  margin-bottom: 8px;
 }
 
 .description__item::before {
@@ -388,17 +411,25 @@ a {
   background-color: var(--basic-red);
   left: 0;
   vertical-align: baseline;
+  margin-top: 4px;
 }
 
 /*---------- showing ----------*/
 
+.showing {
+  margin-top: 41px;
+}
+
 .showing__text {
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 51px;
+  padding-left: 16px;
+  margin-top: 29px;
 }
 
 .showing__wrapper-statistics {
   display: flex;
+  justify-content: space-around;
 }
 
 .showing__statistics {
@@ -417,8 +448,13 @@ a {
 .showing__title {
   font-size: 45px;
   font-weight: 700;
-  padding-bottom: 20px;
   margin: 0;
+  padding-bottom: 32px;
+}
+
+.showing__statistics:nth-child(2) {
+  margin-left: -12px;
+  margin-right: 15px;
 }
 
 /*--------- logos ---------*/
@@ -442,7 +478,7 @@ a {
   width: 1158px;
   height: 2px;
   background-color: var(--basic-page-btn);
-  top: -46px;
+  top: -71px;
 }
 
 .logos__list::after {
@@ -451,7 +487,7 @@ a {
   width: 1158px;
   height: 2px;
   background-color: var(--basic-page-btn);
-  top: 129px;
+  top: 111px;
 }
 
 .logos__item-htmlacademy {
@@ -460,6 +496,8 @@ a {
   width: 199px;
   height: 68px;
   cursor: pointer;
+  margin-left: 52px;
+  margin-top: -6px;
 }
 
 .logos__item-htmlacademy::after {
@@ -468,8 +506,8 @@ a {
   width: 2px;
   height: 52px;
   background-color: var(--basic-page-btn);
-  left: 422px;
-  top: 20px;
+  left: 419px;
+  top:- 5px;
 }
 
 .logos__item-htmlacademy:hover,
@@ -486,7 +524,9 @@ a {
   background-repeat: no-repeat;
   width: 209px;
   height: 90px;
+  margin-top: -23px;
   cursor: pointer;
+  margin-left: -26px;
 }
 
 .logos__item-borodinski:hover,
@@ -504,6 +544,8 @@ a {
   width: 185px;
   height: 52px;
   cursor: pointer;
+  margin-top: -5px;
+  margin-left: -18px;
 }
 
 .logos__item-pink::before {
@@ -512,8 +554,8 @@ a {
   width: 2px;
   height: 52px;
   background-color: var(--basic-page-btn);
-  right: 685px;
-  top: 20px;
+  right: 719px;
+  top: -5px;
 }
 
 .logos__item-pink::after {
@@ -522,8 +564,8 @@ a {
   width: 2px;
   height: 52px;
   background-color: var(--basic-page-btn);
-  right: 369px;
-  top: 20px;
+  right: 419px;
+  top: -5px;
 }
 
 .logos__item-pink:hover,
@@ -541,6 +583,8 @@ a {
   width: 173px;
   height: 84px;
   cursor: pointer;
+  margin-top: -17px;
+  margin-right: 61px;
 }
 
 .logos__item-mishka:hover,
@@ -556,7 +600,8 @@ a {
 
 .map {
   position: relative;
-  width: 100%;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .map__marker {
@@ -585,7 +630,8 @@ a {
   font-size: 18px;
   line-height: 30px;
   margin-left: 50px;
-  margin-bottom: 32px;
+  margin-top: 49px;
+  margin-bottom: 20px;
 }
 
 .popup__address {
@@ -601,7 +647,7 @@ a {
 .popup__address a {
   color: var(--basic-gray-popup);
   display: block;
-  margin-top: 24px;
+  margin-top: 6px;
 }
 
 .popup__btn {
@@ -1022,6 +1068,7 @@ a {
   margin-right: 40px;
   position: relative;
   margin-bottom: 73px;
+  cursor: pointer;
 }
 
 .gallery__sedona--browser {
@@ -1031,10 +1078,16 @@ a {
   height: 40px;
   position: absolute;
   top: -40px;
+  opacity: 0.12;
+}
+
+.gallery__sedona + .gallery__sedona--browser:hover {
+  background-image: url(../img/browser.svg);
 }
 
 .gallery__pink {
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__pink--browser {
@@ -1056,6 +1109,7 @@ a {
   margin-right: 40px;
   margin-bottom: 73px;
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__barbershop--browser {
@@ -1070,6 +1124,7 @@ a {
 
 .gallery__mishka {
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__mishka--browser {
@@ -1086,6 +1141,7 @@ a {
   margin-right: 40px;
   margin-bottom: 73px;
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__aplus--browser {
@@ -1100,6 +1156,7 @@ a {
 
 .gallery__kvast {
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__kvast--browser {
@@ -1173,6 +1230,7 @@ box-sizing: border-box;
   height: 231px;
   background-color: var(--basic-gray);
   text-align: center;
+  display: none;
 }
 
 .popup-wrapper__title {
@@ -1251,16 +1309,22 @@ box-sizing: border-box;
 
 /*---------- footer ----------*/
 
+.page-footer {
+  margin-top: 45px;
+}
+
 .footer__title {
   font-size: 36px;
   text-transform: none;
   line-height: 36px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 .footer__text {
   font-size: 16px;
   line-height: 22px;
   text-transform: none;
+  margin-top: 10px;
 }
