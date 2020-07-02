@@ -936,6 +936,16 @@ a {
   background-image: url(../img/radio-on.svg);
 }
 
+.radio__input:hover + .radio__inner::after,
+.radio__input:focus + .radio__inner::after{
+  opacity: 1;
+}
+
+.radio__input:disabled + .radio__inner::after {
+  opacity: 0.1;
+  color:rgba(40, 49, 54, 0.3);
+}
+
 /*---------- checkbox ----------*/
 
 .checkbox {
@@ -982,6 +992,16 @@ a {
 .checkbox__input:checked + .checkbox__inner::after {
   background-image: url(../img/checkbox-on.svg);
   width: 27px;
+}
+
+.checkbox__input:hover + .checkbox__inner::after,
+.checkbox__input:focus + .checkbox__inner::after{
+  opacity: 1;
+}
+
+.checkbox__input:disabled + .checkbox__inner::after {
+  opacity: 0.1;
+  color:rgba(40, 49, 54, 0.3);
 }
 
 /*---------- sorting ----------*/
@@ -1062,35 +1082,31 @@ a {
 .gallery__catalog {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.gallery__sedona {
-  margin-right: 40px;
+.gallery__item {
   position: relative;
   margin-bottom: 73px;
   cursor: pointer;
 }
 
-.gallery__sedona--browser {
-  background-image: url(../img/browser.svg);
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 40px;
-  position: absolute;
-  top: -40px;
-  opacity: 0.12;
+.gallery__sedona {
+  margin-right: 40px;
 }
 
-.gallery__sedona + .gallery__sedona--browser:hover {
-  background-image: url(../img/browser.svg);
+.gallery__barbershop {
+  margin-right: 40px;
 }
 
-.gallery__pink {
-  position: relative;
-  cursor: pointer;
+.gallery__aplus {
+  margin-right: 40px;
 }
 
-.gallery__pink--browser {
+.gallery__browser {
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
   width: 360px;
@@ -1105,70 +1121,13 @@ a {
   top: 345px;
 }
 
-.gallery__barbershop {
-  margin-right: 40px;
-  margin-bottom: 73px;
-  position: relative;
-  cursor: pointer;
+.gallery__item:hover > .gallery__browser {
+  opacity: 1;
 }
 
-.gallery__barbershop--browser {
-  background-image: url(../img/browser.svg);
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 40px;
-  position: absolute;
-  top: -40px;
-  opacity: 0.12;
+.gallery__item:hover > .popup-wrapper {
+  display: block;
 }
-
-.gallery__mishka {
-  position: relative;
-  cursor: pointer;
-}
-
-.gallery__mishka--browser {
-  background-image: url(../img/browser.svg);
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 40px;
-  position: absolute;
-  top: -40px;
-  opacity: 0.12;
-}
-
-.gallery__aplus {
-  margin-right: 40px;
-  margin-bottom: 73px;
-  position: relative;
-  cursor: pointer;
-}
-
-.gallery__aplus--browser {
-  background-image: url(../img/browser.svg);
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 40px;
-  position: absolute;
-  top: -40px;
-  opacity: 0.12;
-}
-
-.gallery__kvast {
-  position: relative;
-  cursor: pointer;
-}
-
-.gallery__kvast--browser {
-  background-image: url(../img/browser.svg);
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 40px;
-  position: absolute;
-  top: -40px;
-  opacity: 0.12;
-}
-
 /*----------- page-btn ----------*/
 
 .page-btn__list {
@@ -1236,6 +1195,15 @@ box-sizing: border-box;
 .popup-wrapper__title {
   font-size: 18px;
   line-height: 30px;
+}
+
+.popup-wrapper__title:hover {
+  color: var(--basic-red);
+}
+
+.popup-wrapper__title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .popup-wrapper__text {
