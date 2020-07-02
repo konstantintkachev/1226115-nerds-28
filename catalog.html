@@ -71,7 +71,7 @@
                 <label class="radio__inner" for="adaptive">Адаптивная</label>
                 <input class="radio__input" name="grid" type="radio" value="fixed" id="fixed">
                 <label class="radio__inner" for="fixed">Фиксированная</label>
-                <input class="radio__input" name="grid" type="radio" value="rubber" id="rubber">
+                <input class="radio__input" name="grid" type="radio" value="rubber" id="rubber" disabled>
                 <label class="radio__inner" for="rubber">Резиновая</label>
             </div>
 
@@ -85,7 +85,7 @@
               <label class="checkbox__inner" for="news">Новости</label>
               <input class="checkbox__input" type="checkbox" name="gallery" id="gallery">
               <label class="checkbox__inner" for="gallery">Галерея</label>
-              <input class="checkbox__input" type="checkbox" name="basket" id="basket">
+              <input class="checkbox__input" type="checkbox" name="basket" id="basket" disabled>
               <label class="checkbox__inner" for="basket">Корзина</label>
             </div>
 
@@ -117,9 +117,9 @@
               </li>
             </ul>
           </div>
-          <div class="gallery__catalog">
-            <div class="gallery__sedona">
-              <div class="gallery__sedona--browser"></div>
+          <ul class="gallery__catalog">
+            <li class="gallery__item gallery__sedona">
+              <div class="gallery__browser"></div>
               <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Сайт Седона">
               <div class="popup-wrapper">
                 <h3 class="popup-wrapper__title">Sedona</h3>
@@ -128,28 +128,28 @@
                 </p>
                 <button class="popup-wrapper__btn" type="button">9 900руб.</button>
               </div>
-            </div>
-            <div class="gallery__pink">
-              <div class="gallery__pink--browser"></div>
+            </li>
+            <li class="gallery__item gallery__pink">
+              <div class="gallery__browser"></div>
               <img src="img/img-pink-jpg.jpg" width="358" height="576" alt="Сайт Пинк">
-            </div>
-            <div class="gallery__barbershop">
-              <div class="gallery__barbershop--browser"></div>
+            </li>
+            <li class="gallery__item gallery__barbershop">
+              <div class="gallery__browser"></div>
               <img src="img/img-barbershop-jpg.jpg" width="358" height="576" alt="Сайт Барбершоп">
-            </div>
-            <div class="gallery__mishka">
-              <div class="gallery__mishka--browser"></div>
+            </li>
+            <li class="gallery__item gallery__mishka">
+              <div class="gallery__browser"></div>
               <img src="img/img-mishka-jpg.jpg" width="358" height="576" alt="Сайт Мишка">
-            </div>
-            <div class="gallery__aplus">
-              <div class="gallery__aplus--browser"></div>
+            </li>
+            <li class="gallery__item gallery__aplus">
+              <div class="gallery__browser"></div>
               <img src="img/img-aplus-jpg.jpg" width="358" height="576" alt="Сайт Аплус">
-            </div>
-            <div class="gallery__kvast">
-              <div class="gallery__kvast--browser"></div>
+            </li>
+            <li class="gallery__item gallery__kvast">
+              <div class="gallery__browser"></div>
               <img src="img/img-kvast-jpg.jpg" width="358" height="576" alt="Сайт Квас">
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="page-btn">
             <ul class="page-btn__list">
               <li class="page-btn__item page-btn__item--active">
