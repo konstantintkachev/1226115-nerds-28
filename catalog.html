@@ -99,7 +99,7 @@
             <h3 class="sorting__title">Сортировать:</h3>
             <ul class="sorting__list">
               <li class="sorting__item">
-                <button class="sorting__btn--active" type="button" aria-label="Кнопка по цене">по цене</button>
+                <button class="sorting__btn sorting__btn--active" type="button" aria-label="Кнопка по цене">по цене</button>
               </li>
               <li class="sorting__item">
                 <button class="sorting__btn" type="button" aria-label="Кнопка по типу">по типу</button>
@@ -120,34 +120,34 @@
           <ul class="gallery__catalog">
             <li class="gallery__item gallery__sedona">
               <div class="gallery__browser"></div>
-              <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Сайт Седона">
+              <img src="img/img-sedona-jpg.jpg" width="360" height="580" alt="Сайт Седона">
               <div class="popup-wrapper">
                 <h3 class="popup-wrapper__title">Sedona</h3>
                 <p class="popup-wrapper__text">
                   Информационный сайт для туристов
                 </p>
-                <button class="popup-wrapper__btn" type="button">9 900руб.</button>
+                <button class="popup-wrapper__btn" type="button">9 900 ₽</button>
               </div>
             </li>
             <li class="gallery__item gallery__pink">
               <div class="gallery__browser"></div>
-              <img src="img/img-pink-jpg.jpg" width="358" height="576" alt="Сайт Пинк">
+              <img src="img/img-pink-jpg.jpg" width="358" height="578" alt="Сайт Пинк">
             </li>
             <li class="gallery__item gallery__barbershop">
               <div class="gallery__browser"></div>
-              <img src="img/img-barbershop-jpg.jpg" width="358" height="576" alt="Сайт Барбершоп">
+              <img src="img/img-barbershop-jpg.jpg" width="358" height="578" alt="Сайт Барбершоп">
             </li>
             <li class="gallery__item gallery__mishka">
               <div class="gallery__browser"></div>
-              <img src="img/img-mishka-jpg.jpg" width="358" height="576" alt="Сайт Мишка">
+              <img src="img/img-mishka-jpg.jpg" width="358" height="578" alt="Сайт Мишка">
             </li>
             <li class="gallery__item gallery__aplus">
               <div class="gallery__browser"></div>
-              <img src="img/img-aplus-jpg.jpg" width="358" height="576" alt="Сайт Аплус">
+              <img src="img/img-aplus-jpg.jpg" width="358" height="578" alt="Сайт Аплус">
             </li>
             <li class="gallery__item gallery__kvast">
               <div class="gallery__browser"></div>
-              <img src="img/img-kvast-jpg.jpg" width="358" height="576" alt="Сайт Квас">
+              <img src="img/img-kvast-jpg.jpg" width="358" height="578" alt="Сайт Квас">
             </li>
           </ul>
           <div class="page-btn">
@@ -189,7 +189,7 @@
               <button href="#" class="a-popup__close-cross" aria-label="Нажать на кнопку закрыть"></button>
               <div class="a-popup__wrapper">
                 <label class="a-popup__label">Ваше имя:
-                  <input type="text" name="name" placeholder="Имя Фамилия" required="required">
+                  <input class="a-popup__login" type="text" name="name" placeholder="Имя Фамилия" required="required">
                 </label>
                 <label class="a-popup__label">Ваш e-mail:
                   <input type="email" name="email" placeholder="email@example.com" id="email" required="required">
@@ -232,5 +232,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="login.js"></script>
+
   </body>
 </html>
