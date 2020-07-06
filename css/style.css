@@ -30,8 +30,7 @@
 /* global */
 
 body {
-  width: 1440px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin: 0 auto;
@@ -462,12 +461,14 @@ a {
 
 .logos {
   position: relative;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .logos__list {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
   margin-top: 114px;
   margin-bottom: 126px;
@@ -497,8 +498,9 @@ a {
   width: 199px;
   height: 68px;
   cursor: pointer;
-  margin-left: 52px;
+  margin-left: 34px;
   margin-top: -6px;
+  display: block;
 }
 
 .logos__item-htmlacademy::after {
@@ -507,7 +509,7 @@ a {
   width: 2px;
   height: 52px;
   background-color: var(--basic-page-btn);
-  left: 419px;
+  left: 279px;
   top:- 5px;
 }
 
@@ -528,6 +530,7 @@ a {
   margin-top: -23px;
   cursor: pointer;
   margin-left: -26px;
+  display: block;
 }
 
 .logos__item-borodinski:hover,
@@ -547,6 +550,7 @@ a {
   cursor: pointer;
   margin-top: -5px;
   margin-left: -18px;
+  display: block;
 }
 
 .logos__item-pink::before {
@@ -555,7 +559,7 @@ a {
   width: 2px;
   height: 52px;
   background-color: var(--basic-page-btn);
-  right: 719px;
+  right: 579px;
   top: -5px;
 }
 
@@ -565,7 +569,7 @@ a {
   width: 2px;
   height: 52px;
   background-color: var(--basic-page-btn);
-  right: 419px;
+  right: 279px;
   top: -5px;
 }
 
@@ -585,7 +589,8 @@ a {
   height: 84px;
   cursor: pointer;
   margin-top: -17px;
-  margin-right: 61px;
+  margin-right: 45px;
+  display: block;
 }
 
 .logos__item-mishka:hover,
@@ -601,8 +606,8 @@ a {
 
 .map {
   position: relative;
-  width: 1440px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .map__marker {
@@ -619,20 +624,22 @@ a {
 
 .popup {
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   position: absolute;
-  top: 0;
   background-color: var(--basic-white);
-  left: 142px;
-  top: 54px;
+  left: 140px;
+  bottom: 62px;
+  box-sizing: border-box;
+  padding-bottom: 48px;
 }
 
 .popup__title {
   font-size: 18px;
   line-height: 30px;
-  margin-left: 50px;
-  margin-top: 49px;
-  margin-bottom: 24px;
+  text-align: center;
+  margin-left: -25px;
+  margin-top: 50px;
+  margin-bottom: 23px;
 }
 
 .popup__address {
@@ -644,6 +651,7 @@ a {
   padding-right: 37px;
   width: 201px;
   line-height: 18px;
+  text-align: left;
 }
 
 .popup__address a {
@@ -662,7 +670,8 @@ a {
   border-radius: 3px;
   cursor: pointer;
   outline: 0;
-  margin-left: 50px;
+  margin-left: 0;
+  padding-top: 6px;
 }
 
 .popup__btn:hover,
@@ -689,8 +698,8 @@ a {
   display: none;
 }
 
-.a-popup--show {
-  display: block;
+.a-popup__show {
+  display: none;
 }
 
 .a-popup__form {
@@ -1110,6 +1119,8 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  min-width: 756px;
+  justify-content: space-between;
 }
 
 .gallery__item {
@@ -1120,50 +1131,32 @@ a {
   display: block;
 }
 
-.gallery__sedona {
-  margin-right: 40px;
-}
-
-.gallery__barbershop {
-  margin-right: 40px;
-}
-
-.gallery__aplus {
-  margin-right: 40px;
-  margin-bottom: 0;
-}
-
-.gallery__kvast {
-  margin-bottom: 0;
-}
-
 .gallery__browser {
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
-  width: 360px;
+  width: 358px;
   height: 40px;
   position: absolute;
-  top: -40px;
+  top: -39px;
   opacity: 0.12;
-  display: block;
 }
 
 .popup-wrapper {
   position: absolute;
-  top: 345px;
+  bottom: 8px;
 }
 
 .gallery__item:hover > .gallery__browser {
   opacity: 1;
 }
 
-.gallery__item:hover > .popup-wrapper {
+.gallery__item:hover > .popup-wrapper{
   display: block;
 }
 /*----------- page-btn ----------*/
 
 .page-btn {
-  margin-top: 50px;
+  margin-top: -56px;
   margin-bottom: 60px;
 }
 
@@ -1223,17 +1216,22 @@ box-sizing: border-box;
 
 .popup-wrapper {
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   background-color: var(--basic-gray);
   text-align: center;
   display: none;
+  padding-top: 31px;
+  box-sizing: border-box;
+  padding-bottom: 27px;
 }
 
 .popup-wrapper__title {
   font-size: 18px;
   line-height: 30px;
   margin-top: 31px;
-  margin-bottom: 9px;
+  margin-bottom: 17px;
+  color: var(--basic-black);
+  font-weight: 700;
 }
 
 .popup-wrapper__title:hover {
@@ -1248,7 +1246,7 @@ box-sizing: border-box;
 .popup-wrapper__text {
   color: var(--basic-gray-popup);
   text-transform: none;
-  margin-top: 0;
+  margin-top: 10px;
   padding-left: 74px;
   padding-right: 79px;
   line-height: 21px;
