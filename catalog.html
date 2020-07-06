@@ -71,7 +71,7 @@
                 <label class="radio__inner" for="adaptive">Адаптивная</label>
                 <input class="radio__input" name="grid" type="radio" value="fixed" id="fixed">
                 <label class="radio__inner" for="fixed">Фиксированная</label>
-                <input class="radio__input" name="grid" type="radio" value="rubber" id="rubber" disabled>
+                <input class="radio__input" name="grid" type="radio" value="rubber" id="rubber">
                 <label class="radio__inner" for="rubber">Резиновая</label>
             </div>
 
@@ -85,7 +85,7 @@
               <label class="checkbox__inner" for="news">Новости</label>
               <input class="checkbox__input" type="checkbox" name="gallery" id="gallery">
               <label class="checkbox__inner" for="gallery">Галерея</label>
-              <input class="checkbox__input" type="checkbox" name="basket" id="basket" disabled>
+              <input class="checkbox__input" type="checkbox" name="basket" id="basket">
               <label class="checkbox__inner" for="basket">Корзина</label>
             </div>
 
@@ -120,9 +120,9 @@
           <ul class="gallery__catalog">
             <li class="gallery__item gallery__sedona">
               <div class="gallery__browser"></div>
-              <img src="img/img-sedona-jpg.jpg" width="360" height="580" alt="Сайт Седона">
+              <img src="img/img-sedona-jpg.jpg" width="358" height="578" alt="Сайт Седона">
               <div class="popup-wrapper">
-                <h3 class="popup-wrapper__title">Sedona</h3>
+                <a class="popup-wrapper__title" href="#" aria-label="Показать карточку товара">Sedona</a>
                 <p class="popup-wrapper__text">
                   Информационный сайт для туристов
                 </p>
@@ -132,22 +132,57 @@
             <li class="gallery__item gallery__pink">
               <div class="gallery__browser"></div>
               <img src="img/img-pink-jpg.jpg" width="358" height="578" alt="Сайт Пинк">
+              <div class="popup-wrapper">
+                <a class="popup-wrapper__title" href="#" aria-label="Показать карточку товара">Pink</a>
+                <p class="popup-wrapper__text">
+                  Сайт фотоприложения для раскрашивания серых будней
+                </p>
+                <button class="popup-wrapper__btn" type="button">9 900 ₽</button>
+              </div>
             </li>
             <li class="gallery__item gallery__barbershop">
               <div class="gallery__browser"></div>
               <img src="img/img-barbershop-jpg.jpg" width="358" height="578" alt="Сайт Барбершоп">
+              <div class="popup-wrapper">
+                <a class="popup-wrapper__title" href="#" aria-label="Показать карточку товара">Barbershop</a>
+                <p class="popup-wrapper__text">
+                  Подстричься только у нас!
+                </p>
+                <button class="popup-wrapper__btn" type="button">9 900 ₽</button>
+              </div>
             </li>
             <li class="gallery__item gallery__mishka">
               <div class="gallery__browser"></div>
               <img src="img/img-mishka-jpg.jpg" width="358" height="578" alt="Сайт Мишка">
+              <div class="popup-wrapper">
+                <a class="popup-wrapper__title" href="#" aria-label="Показать карточку товара">Mishka</a>
+                <p class="popup-wrapper__text">
+                  Интернет-магазин игрушек ручной работы
+                </p>
+                <button class="popup-wrapper__btn" type="button">9 900 ₽</button>
+              </div>
             </li>
             <li class="gallery__item gallery__aplus">
               <div class="gallery__browser"></div>
               <img src="img/img-aplus-jpg.jpg" width="358" height="578" alt="Сайт Аплус">
+              <div class="popup-wrapper">
+                <a class="popup-wrapper__title" href="#" aria-label="Показать карточку товара">Alpus</a>
+                <p class="popup-wrapper__text">
+                  Сайт для обучения
+                </p>
+                <button class="popup-wrapper__btn" type="button">9 900 ₽</button>
+              </div>
             </li>
             <li class="gallery__item gallery__kvast">
               <div class="gallery__browser"></div>
               <img src="img/img-kvast-jpg.jpg" width="358" height="578" alt="Сайт Квас">
+              <div class="popup-wrapper">
+                <a class="popup-wrapper__title" href="#" aria-label="Показать карточку товара">Kvast</a>
+                <p class="popup-wrapper__text">
+                  Интернет-магазин крафтового кваса
+                </p>
+                <button class="popup-wrapper__btn" type="button">9 900 ₽</button>
+              </div>
             </li>
           </ul>
           <div class="page-btn">
@@ -171,10 +206,7 @@
 
       <div class="map">
         <img src="img/2.jpg" width="1440" height="416">
-        <div class="map__marker">
-          <!-- Подключение маркера карты в стилях
-          <img src="img/map-marker.png" width="231" height="190" alt="Маркер на карте"> -->
-        </div>
+        <div class="map__marker"></div>
           <div class="popup">
             <h3 class="popup__title">NЁRDS DESIGN STUDIO</h3>
             <address class="popup__address">
@@ -233,7 +265,7 @@
       </div>
     </footer>
 
-    <script src="login.js"></script>
+    <script src="/js/login.js"></script>
 
   </body>
 </html>
