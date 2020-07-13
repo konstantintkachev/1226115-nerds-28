@@ -57,6 +57,7 @@ a {
 
 .page {
   height: 100%;
+  margin: 0 auto;
 }
 
 .page-body {
@@ -304,10 +305,6 @@ a {
   top: 7px;
   right: 97px;
 }
-
-/*---------- page-main ----------*/
-
-
 
 /*---------- services ---------*/
 
@@ -653,6 +650,7 @@ a {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  width: 100%;
 }
 
 .map__marker {
