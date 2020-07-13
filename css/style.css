@@ -659,7 +659,7 @@ a {
   width: 231px;
   height: 190px;
   position: absolute;
-  left: 824px;
+  left: 1054px;
   top: 85px;
   z-index: -1;
 }
@@ -671,8 +671,8 @@ a {
   min-height: 308px;
   position: absolute;
   background-color: var(--basic-white);
-  left: 140px;
-  bottom: 61px;
+  left: 372px;
+  bottom: 57px;
   box-sizing: border-box;
   padding-bottom: 44px;
 }
