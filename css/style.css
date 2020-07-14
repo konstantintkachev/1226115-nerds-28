@@ -65,6 +65,7 @@ a {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  min-width: 1200px;
 }
 
 /*---------- page-header ---------*/
@@ -653,17 +654,6 @@ a {
   width: 100%;
 }
 
-.map__marker {
-  background-image: url(../img/map-marker.png);
-  background-repeat: no-repeat;
-  width: 231px;
-  height: 190px;
-  position: absolute;
-  left: 1054px;
-  top: 85px;
-  z-index: -1;
-}
-
 /*---------- popup ----------*/
 
 .popup {
@@ -671,7 +661,7 @@ a {
   min-height: 308px;
   position: absolute;
   background-color: var(--basic-white);
-  left: 372px;
+  left: 95px;
   bottom: 57px;
   box-sizing: border-box;
   padding-bottom: 44px;
